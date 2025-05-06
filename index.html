@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <div class="top1">
+        <div class="logo" flex> <img src="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" height="30px"
+                width="30px"> </div>
+
+        <div class="top2">
+
+            <div class="h"> <button class="homelogo"> <img src="hologo.png"> </button> </div>
+
+            <div class="searchbox"  tabindex="0">
+                <div class="search"> <img src="searchlogo.png" height="20px" width="30px"> </div>
+
+                <input id="search-input" type="text" placeholder="What do you want to play?">
+            </div>
+        </div>
+        <div class="top3">
+            <button class="sign">Sign up</button>
+            <button class="login">Log in</button>
+        </div>
+    </div>
+
+</head>
+
+<body>
+    <div class="maingrid">
+        <div class="left">
+
+            <div class="library">
+                <div id="librarybutton" class="heading">
+                    <img src="liblogo.svg" width="20px">
+                    <h2> Your Library </h2>
+                </div>
+                <button id="advbtn"> <img src="add.svg" width="20px"> </button>
+            </div>
+
+            <div class="lboxes">
+                <div class="box1">
+                    <div class="text1"> Create your first playlist</div>
+                    <div class="text2">It's easy,we'll help you</div>
+                    <button class="bx1">Create Playlist</button>
+                </div>
+                <div class="box2">
+                    <div class="text1-1">Let's find some podcasts to follow</div>
+                    <div class="text2-2">We'll keep you updated on new episodes</div>
+                    <button class="bx2">Browse Podcasts</button>
+                </div>
+            </div>
+            <div class="links">
+                <div><a href="#">Legal</a></div>
+                <div><a href="#">Safety & Privacy center</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+                <div><a href="#">Cookies</a></div>
+                <div><a href="#">About Ads</a></div>
+                <div><a href="#">Accessibilty</a></div>
+            </div>
+            <div class="Cookies" font-weigth="bold"><a href="#" style="color: white;text-decoration: none; margin: 20px;">Cookies</a>
+                
+            </div>
+            <div class="eng">
+                <button class="english">
+                    <img src="eng.svg" width="15px"> English</button>
+            </div>
+            <div class="songslist hidden" style="color: white;">
+                <ul>
+                </ul>
+            </div>
+            <div class="csong hidden">
+                <ul></ul>
+            </div>
+        <div class="ctwo hidden">
+            <ul>
+            </ul>
+        </div>
+        </div>
+
+
+        <div class="right">
+            <div class="playlist">
+                <h2>Spotify Playlists</h2>
+                <div class="cardcontainer">
+                    <div class="card" id="c1">
+                        <div class="play">
+                            <img src="play.png" alt="Play">
+                        </div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84bf006e0e917fcd38cd78fdeb" alt="Album cover">
+                        <h3 style="font-size: 15px; margin: 6px; font-family: sans-serif;">Arijit Singh: Soulful Hits</h3>
+                        <p style="font-size: 12px; margin: 8px; font-family: sans-serif;">Feel every word, live every note</p>
+                    </div>
+
+                    <div class="card" id="c2">
+                        <div class="play"> <img src="play.png"></div>
+                        <img
+                            src="https://seed-mix-image.spotifycdn.com/v6/img/artist/4gzpq5DPGxSnKTe4SA8HAU/en/default">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Cold play</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Coldplay: Soundtrack of the stars
+                        </p>
+                    </div>
+                 
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000252feef11af8c9d412769ec5a">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">This Is Taylor Swift</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Taylor's version only</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d25f525de9569d6e433532aa" alt="">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Bollywood & Chill</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Sit back,and chill with
+                            bollywood's easygoing hits</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c10e4f86baf81693af582250a"
+                            alt="">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Prateek Kuhaad Mix</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Heartfelt vibes, Prateek style
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d02410ebbfb93ff4a6be81af">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Harry Styles: Top Tracks</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Fine Line to good times</p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c4566754c2ce0e91697adf106"
+                            alt="">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Desi Hip Hop</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Hip hop beats picked just for you
+                        </p>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fe1a4675b18bfc373cd7f954">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">One Direction</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Hits that steal your heart</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002299dbd3f20e8007822d9f478" alt="">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Hot Hits Punjabi</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">Catch the hottest punjabi tracks
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play"> <img src="play.png"></div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002555f4ca4c593c0044919c2f2">
+                        <h3 style="font-size: 15px;margin: 6px;font-family:sans-serif;">Pop Shots</h3>
+                        <p style="font-size: 12px;margin: 8px;font-family:sans-serif;">All your pop favorites</p>
+                    </div>
+
+
+                </div>
+            </div>
+    
+            <div class="footer">
+                <ul>
+                    <p>Company </p>
+                    <li> <a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">For the Record</a></li>
+                </ul>
+
+                <ul>
+                    <p>Communities</p>
+                    <li> <a href="#">For Artists</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Vendors</a></li>
+                </ul>
+
+                <ul>
+                    <p>Useful Links</p>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Free Mobile App</a></li>
+
+                </ul>
+
+
+                <ul>
+                    <p>Spotify Plans</p>
+                    <li><a href="#">Premium Individual</a></li>
+                    <li><a href="#">Premium Duo</a></li>
+                    <li><a href="#">Premium Family</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Spotify Free</a></li>
+
+                </ul>
+
+                <div class="platforms">
+                    <button class="ig"><img src="ig.png" alt=""></button>
+                    <button class="tw"><img src="tw.png" alt=""></button>
+                    <button class="fb"><img src="fb.png" alt=""></button>
+
+                </div>
+
+            </div>
+
+            <div class="partition" style="background-color:rgb(39, 38, 38);width: 73vw;height: 2px; margin-top: 20px;">
+            </div>
+            <p
+                style="padding: 20px;font-family:var(--encore-body-font-stack,var(--fallback-fonts,sans-serif));font-size: 15px;color:rgb(158, 156, 156);">
+                © 2025 Spotify AB</p>
+
+        </div>
+    </div>
+    
+        <div class="base">
+            
+        <div class="one">
+            <div class="songinfo"></div>
+            <div class="playbuttons">
+<img id="previous" src="preplay.png" alt="">
+<img id="play" src="play.png" alt="">
+        <img id="next" src="nextplay.png" alt="">
+        </div>
+        
+        <div class="sound">
+        <div class="songtime"></div>
+        <div class="soundimg">
+           <div class="sp"> <img src="speaker.png"></div>
+           <div class="vol"> 
+           <div class="range" > <input type="range" name="volume"> </div>
+           </div>
+        
+             </div>
+
+</div>
+    
+    </div>
+    <div class="two">
+        <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
