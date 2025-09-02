@@ -19,75 +19,75 @@ function secondsToMinutesSeconds(seconds) {
 }
 
 async function getsongs() {
+  tracks = [
+    { name: "Anti-Hero", filename: "Anti-Hero-645939.mp3", arname: "Taylor Swift", img: "https://i.scdn.co/image/ab67616d00004851e787cffec20aa2a396a61647" },
+    { name: "Fix You", filename: "Fix_You-556571.mp3", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651" },
+    { name: "Love Story", filename: "Love_Story-151200.mp3", arname: "Taylor Swift", img: "https://i.scdn.co/image/ab67616d00004851877ea8fa223c26f19aaef92d" },
+    { name: "Tum Hi Ho", filename: "Tum_Hi_Ho_Aashiqui_2-576744.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d000048516404721c1943d5069f0805f3" },
+    { name: "God_Put_A_Smile", filename: "God_Put_A_Smile-18411.mp3", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00004851de09e02aa7febf30b7c02d82" },
+    { name: "Levitating", filename: "Levitating-641072.mp3", arname: "Dua Lipa", img: "https://i.scdn.co/image/ab67616d000048514bc66095f8a70bc4e6593f4f" }
+  ];
+
+  cards = [
+    { name: "Aabaad Barbaad", filename: "Aabaad Barbaad.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d00001e02f338d36ff740be4cdc5ec709" },
+    { name: "Agar Tum Saath Ho", filename: "Agar_Tum_Saath_Ho.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d00001e02da50894e074ecd5ce61de0a1" },
+    { name: "Aayat", filename: "Aayat.mp3", arname: "Arijit Singh", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" }
+  ];
+
+  card2 = [
+    { filename: "A-Sky-Full-Of-Stars.mp3", name: "A Sky Full of Stars", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" },
+    { filename: "Hymn-for-the-Weekend.mp3", name: "Hymn for the Weekend", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" },
+    { filename: "Viva-La-Vida.mp3", name: "Viva La Vida", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" },
+    { filename: "yellow.mp3", name: "Yellow", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" }
+  ];}
+
+
+//   let a = await fetch("http://127.0.0.1:3000/id.html");
+//   let response = await a.text();
+//   let div = document.createElement("div");
+//   div.innerHTML = response;
+//   let as = div.getElementsByTagName("a");
   
-tracks = [
-  { name: "Anti-Hero", filename: "Anti-Hero-645939.mp3", arname: "Taylor Swift", img: "https://i.scdn.co/image/ab67616d00004851e787cffec20aa2a396a61647" },
-  { name: "Fix You", filename: "Fix_You-556571.mp3", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651" },
-  { name: "Love Story", filename: "Love_Story-151200.mp3", arname: "Taylor Swift", img: "https://i.scdn.co/image/ab67616d00004851877ea8fa223c26f19aaef92d" },
-  { name: "Tum Hi Ho", filename: "Tum_Hi_Ho_Aashiqui_2-576744.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d000048516404721c1943d5069f0805f3" },
-  { name: "God_Put_A_Smile", filename: "God_Put_A_Smile-18411.mp3", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00004851de09e02aa7febf30b7c02d82" },
-  { name: "Levitating", filename: "Levitating-641072.mp3", arname: "Dua Lipa", img: "https://i.scdn.co/image/ab67616d000048514bc66095f8a70bc4e6593f4f" }
-];
 
-cards = [
-  { name: "Aabaad Barbaad", filename: "Aabaad Barbaad.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d00001e02f338d36ff740be4cdc5ec709" },
-  { name: "Agar Tum Saath Ho", filename: "Agar_Tum_Saath_Ho.mp3", arname: "Arijit Singh", img: "https://i.scdn.co/image/ab67616d00001e02da50894e074ecd5ce61de0a1"  },
-  { name: "Aayat", filename: "Aayat.mp3", arname: "Arijit Singh", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" }
-];
+//   for (let element of as) {
+//     if (element.href.endsWith(".mp3")) {
+//       const filename = element.href.split("tracks/")[1];
+//       const name = element.innerText.trim();
+//       const arname = element.dataset.arname
+//       const img = element.dataset.img
+//       tracks.push({
+//         filename: filename,
+//          name: name ,
+//          arname:arname,
+//          img:img
 
-card2=[
-   { filename: "A-Sky-Full-Of-Stars.mp3", name: "A Sky Full of Stars", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515"  },
-  { filename: "Hymn-for-the-Weekend.mp3", name: "Hymn for the Weekend", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515"   },
-  { filename: "Viva-La-Vida.mp3", name: "Viva La Vida", arname: "Coldplay", img:"https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515"  },
-  { filename: "yellow.mp3", name: "Yellow", arname: "Coldplay", img: "https://i.scdn.co/image/ab67616d00001e026b01530825529db0bee75515" }
-];
+//       });
+//     }
+//   }
 
-  let a = await fetch("http://127.0.0.1:3000/id.html");
-  let response = await a.text();
-  let div = document.createElement("div");
-  div.innerHTML = response;
-  let as = div.getElementsByTagName("a");
-  
+//   let b = await fetch("http://127.0.0.1:3000/id.html");
+//   let res = await b.text();
+//   let d= document.createElement("d");
+//   d.innerHTML = res;
+//   let c = div.getElementsByTagName("b");
 
-  for (let element of as) {
-    if (element.href.endsWith(".mp3")) {
-      const filename = element.href.split("tracks/")[1];
-      const name = element.innerText.trim();
-      const arname = element.dataset.arname
-      const img = element.dataset.img
-      tracks.push({
-        filename: filename,
-         name: name ,
-         arname:arname,
-         img:img
+//   for (let element of c) {
+//     if (element.href.endsWith(".mp3")) {
+//       const filename = element.href.split("cards/")[1];
+//       const name = element.innerText.trim();
+//       const arname = element.dataset.arname
+//       const img = element.dataset.img
+//       cards.push({
+//         filename: filename,
+//          name: name ,
+//          arname:arname,
+//          img:img
 
-      });
-    }
-  }
+//       });
+//     }
+//   }
 
-  let b = await fetch("http://127.0.0.1:3000/id.html");
-  let res = await b.text();
-  let d= document.createElement("d");
-  d.innerHTML = res;
-  let c = div.getElementsByTagName("b");
-
-  for (let element of c) {
-    if (element.href.endsWith(".mp3")) {
-      const filename = element.href.split("cards/")[1];
-      const name = element.innerText.trim();
-      const arname = element.dataset.arname
-      const img = element.dataset.img
-      cards.push({
-        filename: filename,
-         name: name ,
-         arname:arname,
-         img:img
-
-      });
-    }
-  }
-
-}
+// }
 
 const playmusic = (trac, pause = false) => {
   if (typeof trac !== "string") {
